@@ -1,0 +1,112 @@
+/*--- style for the body ---*/
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 1em;
+  padding: 1em;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+    color:#004d99;
+}
+
+h2 {
+    color:#1a75ff;
+}
+
+h3 {
+    color:#746ce9
+}
+
+/*--- give style to my navigation bar ---*/
+nav {
+  background-color: #004d99;
+  padding: 0.5em 0;
+}
+
+/* I got the following remove with chatgpt's help/
+/* Remove default list styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;               /* Make items horizontal */
+  justify-content: center;     /* Center align the links */
+  gap: 2em;                    /* spacing */
+}
+
+/* Style individual links */
+nav a {
+  color:  #ffffff; /* White text for contrast */
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  padding: 0.5em 0;
+}
+
+/* Hover and active states */
+nav a:hover,
+nav a:focus {
+  color: aquamarine; /* Accent highlight */
+  border-bottom: 2px solid var aquamarine;
+}
+
+/*--- Give Skill Section its own style, I complete the contract colour style list with AI's help ---*/
+
+.skill-section h3 {
+  color: #004d99; /* Deep blue headers */
+  font-size: 1.3em;
+  text-align: left;
+  border-left: 2px solid #004d99;
+  padding-left: 0.5em;
+}
+
+.skill-section ol {
+  margin-left: 1.5em;
+  padding-left: 0.5em;
+  text-align: left;
+  color: #333333; /* Dark text for readability */
+}
+
+.skill-section li {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.skill-section li strong {
+  color: #003366; /* Slightly darker blue for emphasis */
+  display: inline-block;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+
+
+/*--- Give work-experience its own style ---*/
+.work-experience h3 {
+  color: #004d99; /* Deep blue headers */
+  font-size: 1.3em;
+  text-align: left;
+  border-left: 2px solid #004d99;
+  padding-left: 0.5em;
+}
+
+.work-experience ol {
+  margin-left: 1.5em;
+  padding-left: 0.5em;
+  text-align: left;
+  color: #333333; /* Dark text for readability */
+}
+
+.work-experience li {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.work-experience li strong {
+  color: #003366; /* Slightly darker blue for emphasis */
+  display: inline-block;
+  margin-bottom: 0.2em;
+  text-align: left;
+}

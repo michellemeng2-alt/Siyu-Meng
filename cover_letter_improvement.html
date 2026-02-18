@@ -1,0 +1,274 @@
+<!--Improve this page-->
+<!--Guidelines: 
+●  Semantic  structure:  Use  meaningful  HTML  tags  (e.g.,  <header>,  <section>, 
+<article>) to ensure the content is logically organised and easy to navigate. 
+●  ARIA roles:  Integrate  ARIA  roles  thoughtfully  to  improve  context  and  navigation 
+for users relying on assistive technologies. 
+●  Images:  Ensure  all  images  have  descriptive  alt  attributes  to  convey  their 
+purpose.  Decorative  images  should  have  empty  alt  attributes  (alt="")  to  be 
+ignored by screen readers. 
+●  Accessible  forms:  Design  a  basic  form  with  clear  labels,  aria-  attributes  for 
+improved usability, and proper keyboard accessibility.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi! this is my first CV</title>
+    <!-- The title appears in the browser tab -->
+    <!--use my style sheet-->
+    <link rel="stylesheet" href="style_cv.css" />
+</head>
+
+<!-- The following is my first CV content-->
+
+<body>
+    <section>
+        <!-- Profile: Display your name and a profile photo.-->
+        <header>
+            <h1 id="profile">Profile</h1>
+        </header>
+        <div aria-label="my profile image">
+            <img src="https://www.hyperiondev.com/media/assets/no_mentor.png"
+                alt="This is a random picture I choose for my first cv" height="50px" width="50px" />
+        </div>
+        <p id="name">Siyu Meng</p>
+        <hr />
+        <!--Menu-->
+        <div aria-label="main navigation for my cover letter">
+            <nav>
+                <ul>
+                    <li><a href="#bio">Professional Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work-experience">Professional Experience</a></li>
+                    <li><a href="#contact-details">Contact Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!--Bio:  Write  a  short  description  of  yourself,  including  your  strengths, 
+motivations, and aspirations.  -->
+
+    <section>
+        <h2 id="bio">Professional Summary</h2>
+        <p id="bio content">
+            IT Project Coordinator with a strong background in enterprise IT project
+            management, requirement analysis, A/Btesting and UI/UX research. Skilled
+            at designing project approaches that prioritize flexibility, ensuring
+            systems or features can easily adapt to changing requirements.
+            Experienced in agile environments, with a focus on clear communication
+            between stakeholders and developers to deliver efficient, user-focused
+            solutions. Holds a Master's degree in Information Technology (Enterprise
+            Management) and has hands-on experience in stakeholder management and
+            web development.
+        </p>
+    </section>
+    <hr />
+
+    <!--Skills: Provide a list of both your soft and hard skills.-->
+    <!-- Give skill it's own section to provide style-->
+    <section class="skill-section">
+        <h2 id="skills">Skills</h2>
+
+        <!--Hard Skills-->
+        <h3 id="hard skills">Techinical Skills</h3>
+        <!--ordered list-->
+        <div role="list" aria-label="skill list">
+            <div role="listitem">
+                <ol>
+                    <!--checked via AI and know that I can use strong to bold my text in ordered list-->
+                    <li>
+                        <strong>Project & Product Tools:</strong>Experienced in using Jira
+                        for project management, Confluence for documentation and knowledge
+                        sharing, Braze for campaign management, and Zoho Pagesense for
+                        user behavior tracking and A/B testing.
+                    </li>
+                    <li>
+                        <strong>Web Development:</strong>Experienced in using Shopify for
+                        eCommerce site management,Storyblok for static page, and Elementor
+                        for WordPress-based website design.
+                    </li>
+                    <li>
+                        <strong>Testing:</strong> Experienced in using BrowserStack for
+                        automatic testing and new feature testing.
+                    </li>
+                </ol>
+            </div>
+            <div role="listitem">
+                <h3 id="soft skills">Other Skills</h3>
+                <!--ordered list-->
+                <ol>
+                    <li>
+                        <strong>Solution Design & Adaptability:</strong>Strong ability to
+                        define project methods that allow systems or features to remain
+                        scalable and easily adjusted, ensuring developers can implement
+                        solutions that support long-term adaptability and efficiency.
+                    </li>
+                    <li>
+                        <strong>Marketing & Strategy:</strong>Experienced in applying
+                        PESTLE and SWOT analysis to inform marketing and product strategy,
+                        and conducting case study analysis to support data-driven
+                        decision-making.
+                    </li>
+                    <li>
+                        <strong>Email Automation:</strong>Built templates in Braze, using
+                        API data from the InkStation database to send campaign and canva
+                        to different customer segments.
+                    </li>
+                    <li>
+                        <strong>Strong communication and interpersonal skills:</strong>
+                        Developed through stakeholder interviews and cross-functional
+                        teamwork.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!--Education: List and describe your educational background. -->
+    <section>
+        <h2 id="education">Education</h2>
+        <h3 id="degree">
+            Master of Information Technology(Enterprise Management)
+        </h3>
+        <!--checked via AI and know that I can use em or i to make my text become italis in ordered list-->
+        <h4 id="university">
+            <em>University of South Australia |Graduated: 2024</em>
+        </h4>
+        <h3 id="degree">Bachelor of Science (Major: Mathematics)</h3>
+        <h4 id="university">
+            <em>University of New South Wales | Graduated: 2022</em>
+        </h4>
+    </section>
+    <hr />
+
+    <!--Work experience:  List  and  describe  your  roles and responsibilities. If 
+you  lack  work  experience,  include  any  relevant  volunteer  work  or 
+completed  projects  instead.  Provide  links  to  the  company's  website 
+and/or to your projects or portfolio, if applicable. -->
+    <section class="work-experience">
+        <h2>Professional Experience</h2>
+        <!--work experience 1-->
+        <div>
+            <h3 id="experience">Project Coordinator</h3>
+            <h4 id="company">
+                <strong>CGA Pty Ltd (eCommerce Group)</strong> | Sydney, Australia
+            </h4>
+            <h5 id="period"><em>Oct2024 - Present</em></h5>
+            <h5 id="detail">Brands: InkStation, TonerCity, Topak…</h5>
+            <div role="list" aria-label="description job">
+                <!--unordered list-->
+                <div role="listitem">
+                    <ul>
+                        <li>
+                            Acted as the bridge among stakeholders, developers, and the
+                            project manager to ensure alignment across web development and
+                            IT operations projects.
+                        </li>
+                        <li>
+                            Documented clear, actionable business and technical requirements
+                            for the project manager.
+                        </li>
+                        <li>
+                            Maintained project visibility through Jira board updates,
+                            ensuring on-time task delivery.
+                        </li>
+                        <li>
+                            Reviewed, tested, and verified feature releases before
+                            deployment to meet business requirements.
+                        </li>
+                        <li>
+                            Facilitated seamless communication across IT, marketing,
+                            customer service, and product listing teams for feature rollouts
+                            and process optimizations.
+                        </li>
+                        <li>
+                            Contributed to frontend/backend enhancements and A/B testing
+                            efforts to improve conversion rates.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--work experience 2-->
+        <div>
+            <h3 id="experience">Customer Service Representative</h3>
+            <h4 id="company">
+                <strong>Ice Break Escape Room</strong> | Sydney, Australia
+            </h4>
+            <h5 id="period"><em>Feb 2022 - Jun 2022</em></h5>
+            <div role="list" aria-label="description job">
+                <div role="listitem">
+                    <ul>
+                        <li>
+                            Managed customer reservations (~100 per day), responded to email
+                            queries, and resolved complaints effectively.
+                        </li>
+                        <li>
+                            Delivered consistent high-quality service, contributing to the
+                            top-10 ranking escape room in Sydney.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!-- Contact  details:  Include  your  full  name,  contact  number,  email 
+address, and links to your professional social media accounts. -->
+    <section>
+        <h2 id="contact-details">Contact Details</h2>
+        <!--table-->
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Siyu Meng</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>michelle.meng2@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>mobile</td>
+                    <td>0416347212</td>
+                </tr>
+                <tr>
+                    <td>Linkdln</td>
+                    <td>
+                        <a href="https://www.linkedin.com/in/meng-siyu-69aaa0228/">My Profile</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr />
+    <!-- I want to design a contact me form-->
+    <!-- I build based on the template-->
+    <section>
+        <h2 id="contact me">Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" aria-required="false" />
+            <!--optional-->
+
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" aria-required="false" />
+            <!--optional-->
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
